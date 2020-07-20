@@ -1,0 +1,11 @@
+.home_container{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.skills{
+	display: inline-block;
+}
+.about{
+	display: inline-block;
+	width: 300px;
+}
