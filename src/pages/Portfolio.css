@@ -4,7 +4,7 @@
 	padding-left: 15px;
 	padding-right: 15px;
 	text-align: center;
-	background-color: #f3f7f9;
+	background-color: #f2f7f9;
 }
 
 .portfolio-projects-wrapper{
@@ -35,6 +35,22 @@
 	text-decoration: none;
 	color: blue;
 }
+
+.portfolio-project-technologies ul{
+	list-style-type: none;
+	padding-left: 0;
+
+}
+.portfolio-project-technologies li{
+	display: inline-block;
+	margin-right: 15px;
+	color: black;
+	border-radius: 7px;
+	background-color: rgb(228, 228, 228);
+	padding-left: 5px;
+	padding-right: 5px; 
+}
+
 
 @media only screen and (max-width: 650px){
 	.portfolio-projects-wrapper{

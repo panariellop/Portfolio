@@ -19,7 +19,16 @@ class Project extends React.Component{
 				<div className = "portfolio-project">
 		    			<h3>{this.props.name}</h3>
 		    			<p>{this.props.about}</p>
-		    			{this.props.github_link && <a href = {this.props.github_link}><img src={this.state.github_logo} alt = "Github" 
+								<div className = 'portfolio-project-technologies'>
+								<ul>
+									{this.props.technologies.map((e, i)=> {
+										return (
+											<li key = {i}>{this.props.technologies[i]}</li>
+										)
+									})}
+								</ul>
+								</div>
+		    			{this.props.github_link && <a href = {this.props.github_link}><img src={this.state.github_logo} alt = "Github"
 		    				onMouseEnter= { () => {
 		    					this.setState({
 		    						github_logo: github_logo_active
@@ -31,11 +40,18 @@ class Project extends React.Component{
 		    					})
 		    				}}
 		    			/></a>}
-		    			
-		    			<a href = {this.props.link}>
-		    				Link to Project 
-		    			</a>
-		    			
+							
+		    			{this.props.link &&
+								<a href = {this.props.link}>
+			    				Link to Project
+			    			</a>}
+
+							{this.props.screenshots_link &&
+								<a href = {this.props.screenshots_link}>
+									Screenshots
+								</a>}
+
+
 		    		</div>
 			</Fragment>
 		)
@@ -45,7 +61,8 @@ class Project extends React.Component{
 Project.propTypes = {
 	name: PropTypes.string,
 	link: PropTypes.string,
-	about: PropTypes.string, 
+	about: PropTypes.string,
+	technologies: PropTypes.arrayOf(PropTypes.string),
 }
 
-export default Project 
+export default Project
