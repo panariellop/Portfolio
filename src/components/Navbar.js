@@ -1,26 +1,26 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {Navbar, Nav} from 'react-bootstrap';
 import './Navbar.css';
 const logo = '../static/logo.ico';
-const navbar = () => {
-  return(
-    <div className = "navbar_container">
-      <h3 className = "logo">Piero Panariello</h3>
-        <ul className = "nav">
-          <li className = "navLink">
-            <Link to = '/'>Home</Link>
-          </li>
-          <li className = "navLink">
-            <Link to = '/contact'>Contact</Link>
-          </li>
-          <li className = "navLink">
-            <Link to = '/portfolio'>Portfolio</Link>
-          </li>
-        </ul>
-    </div>
+class Navbar extends React.Component{
+  render(){
+		return(
+			<div className = "navbar-container">
+				<h3 className = "navbar-logo">Piero Panariello</h3>
+					<ul className = "navbar-navlist">
+						<li className = "navbar-navlink">
+							<Link className = "navbar-routerlink" to = '/'>Home</Link>
+						</li>
+						<li className = "navbar-navlink">
+							<Link className = "navbar-routerlink" to = '/portfolio'>Portfolio</Link>
+						</li>
+						<li className = "navbar-navlink">
+							<Link className = "navbar-routerlink" to = '/contact'>Contact</Link>
+						</li>
+					</ul>
+			</div>
   );
-
+	}
 };
 
-export default navbar 
+export default Navbar 

@@ -1,3 +1,40 @@
+
+.contact-container hr{
+	width: 40%;
+	border-width: 2px;
+}
+
+.contact-header{
+	text-align:center;
+	background-color: #f3f7f9;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
 .contact{
-	background-color: blue;
+	padding: 15px;
+	border-radius: 7px;
+	text-align: center;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	transition: 0.4s;
+}
+
+.contact p a{
+	text-decoration: none; 
+	transition: 0.4s;
+}
+.contact p a:hover{
+	color: blue;
+}
+
+
+@media only screen and (max-width: 650px){
+	.contact{
+		width: auto;
+		margin-right: 15px;
+		margin-left: 15px;
+	}
 }
