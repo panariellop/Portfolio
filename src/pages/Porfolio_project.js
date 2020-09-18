@@ -18,7 +18,10 @@ class Project extends React.Component{
 			<Fragment>
 				<div className = "portfolio-project">
 		    			<h3>{this.props.name}</h3>
-		    			<p>{this.props.about}</p>
+		    			<p><strong>About: </strong>{this.props.about}</p>
+							{this.props.issues && <p>
+								<strong>Common Issues I Encountered: </strong>{this.props.issues}
+							</p>}
 								<div className = 'portfolio-project-technologies'>
 								<ul>
 									{this.props.technologies.map((e, i)=> {
@@ -40,7 +43,7 @@ class Project extends React.Component{
 		    					})
 		    				}}
 		    			/></a>}
-							
+
 		    			{this.props.link &&
 								<a href = {this.props.link}>
 			    				Link to Project
