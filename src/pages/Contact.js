@@ -12,11 +12,11 @@ const contact = () => {
 
       <div className = "contact">
       	<h3>Email</h3>
-      	<p>pierodpanariello@gmail.com</p>
+      	<p>pdpanariello@email.wm.edu</p>
       </div>
       <hr/>
       <div className = "contact">
-            <h3>Linked-In</h3>
+            <h3>LinkedIn</h3>
             <p><a href = "https://www.linkedin.com/in/piero-panariello-a460a81b0">Piero Panariello</a></p>
       </div>
 	</div>

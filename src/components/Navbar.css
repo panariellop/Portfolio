@@ -12,6 +12,7 @@
 	padding-top: 15px;
 	padding-bottom: 10px;
 	background-color: white;
+	z-index: 3;
 }
 
 .navbar-logo{
