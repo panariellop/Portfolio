@@ -54,6 +54,20 @@
 	margin-bottom: 5px;
 }
 
+.screenshots-container li{
+	list-style-type:none; 
+	display: inline-block; 
+	padding: 10px; 
+	width: 30%; 
+}
+
+.screenshots-container li img{
+	border: 1px solid rgba(0, 0, 0, 0.297); 
+	width: 100%;
+}
+.screenshots-container li img:hover{
+	cursor: pointer; 
+}
 
 @media only screen and (max-width: 650px){
 	.portfolio-projects-wrapper{
