@@ -22,7 +22,7 @@
 }
 
 .gallery-controls-nav button{
-    background-color: rgb(59, 193, 59);
+    background-color: rgb(201, 201, 201);
     border-bottom-left-radius: 7px; border-bottom-right-radius: 7px;
     border-color: transparent; 
 
@@ -47,7 +47,7 @@
 @media only screen and (max-height: 800px) and (orientation: landscape){
     .gallery-container-inner{
         height:70%;
-        width: 40%; 
+        width: 45%; 
     }
     .gallery-current-screenshot img{
         
@@ -55,10 +55,10 @@
         width: 100%; 
     }
 }
-@media only screen and (max-height: 700px) and (orientation: landscape){
+@media only screen and (max-height: 600px) and (orientation: landscape){
     .gallery-container-inner{
         height:70%;
-        width: 35%; 
+        width: 30%; 
     }
     .gallery-current-screenshot img{
         
