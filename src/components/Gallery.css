@@ -47,7 +47,7 @@
 @media only screen and (max-height: 800px) and (orientation: landscape){
     .gallery-container-inner{
         height:70%;
-        width: 45%; 
+        width: 50%; 
     }
     .gallery-current-screenshot img{
         
