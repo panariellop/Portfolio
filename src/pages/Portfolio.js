@@ -27,31 +27,24 @@ class portfolio extends React.Component{
 		    	</div>
 		    	<div className = "portfolio-projects-wrapper">
 
-				<Project name = "Tee Time Alerter"
-						github_link = "" link = "https://teealert.herokuapp.com/"
-						issues = "In order to make this app functional, an automated script was used to check the golf club's API for available tee times against the user requests that were being processed. All incoming user requests were sent to a database, which could then be accessed by my automated script."
-						technologies = {["React/Bootstrap", "Node.js", "MongoDB", "Express.js", "Heroku"]}
-		    			about = "This application uses the Miacomet Golf Course API to identify available tee times and alerts the user via email when a tee time is found that matches their requirements."
-						screenshots = {[ttasc1]}
-						/>
-						
-
-						<hr/>
-
-		    		
-
-						<Project name = "Workout"
+				<Project name = "Workout"
 						github_link = "" link = ""
-						issues = "This application was a complex project with many moving parts. The largest issues encountered involved security of the application and user data. I relied heavily on industry standards to ensure my application and any data transfered was secure and was recieved by the correct user."
+						issues = "This application was a complex project with many moving parts. The largest issues encountered involved security of the application and user data. I relied heavily on industry standards to ensure my application and any data transferred was secure and was received by the correct user. I had to learn how JSON web tokens functioned, and how they are used to provide a secure connection method to the API."
 						technologies = {["React", "Node.js", "MongoDB", "Express.js", "Heroku"]}
-		    			about = "This application was created to solve a problem I encounter every day: I love weightlifting, but I find it difficult to track my progress through analytical data. Using pen and paper is extremely versitile, but creating graphics is extremely time consuming. While Google Sheets was not built for this type of application, it was useful since my data could be accessed by multiple devices. Other applications suited to solve this problem always had the same problem: they were not customizable and lacked the analytical features that I found were useful to track my progress. My application targets all of these issues and improves upon the features found in other applications."
+		    			about = "One of my passions is weightlifting, however, I found it difficult to track my progress intermittently stopping to use pen and paper. Although Google Sheets was not built for this type of application, it was useful since my data could be accessed on multiple devices. Other applications suited to solve this problem had the same issue in common: they were not customizable and lacked the analytical features useful in tracking my progress. My application resolved these issues and improved the features found in other applications. I implemented a complete, secure, RESTful API in this application and used MongoDB Atlas to store user information in the cloud to allow my information to be accessed everywhere, and a unique frontend interface for complete control over my data."
 						screenshots = {[wsc1, wsc2, wsc3, wsc4, wsc5]}
 						/>
-						
-
 						<hr/>
 
-		    		
+				<Project name = "Tee Time Alerter"
+						github_link = "" link = "https://teealert.herokuapp.com/"
+						issues = "To facilitate app functionality, an automated script was used to check the golf club's API for available tee times meeting user requirements. Fairness was an issue I had to solve, and I decided the most fair way to distribute requests was a first-come-first-serve method. All incoming user requests were sent to a database accessed by my automated script at discrete time intervals."
+						technologies = {["React/Bootstrap", "Node.js", "MongoDB", "Express.js", "Heroku"]}
+		    			about = "This application interfaces with the golf club’s API to identify available tee times in real time and alerts the user via email when a tee time is available matching their pre-set requirements. Particularly in the time of COVID 19, this app was extensively used due to the high demand for outdoor activities. I built a backend system in Express.js to facilitate requests and automate tasks. This was connected to a React frontend to allow users to input data."
+						screenshots = {[ttasc1]}
+						/>
+
+						<hr/>
 
 						<Project name = "Github Finder" 
 						github_link = "https://github.com/panariellop/github_finder" link = "https://panariellopgithubfinder.netlify.app"

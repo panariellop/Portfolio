@@ -16,8 +16,7 @@ const Home = () =>{
       <div className = "home-about">
       <h3>About Me</h3>
         <p>
-        I am a full stack web developer with experience in React, Node.js, and Express.js.
-        I have a computer science background in Python3. 
+        I am a full stack web developer with experience in React, Node.js, and Express.js. I have a computer science background in Python3. 
         </p>
       </div>
       <div className = "home-skills">
