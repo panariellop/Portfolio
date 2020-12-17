@@ -30,7 +30,7 @@ class Project extends React.Component{
 		return(
 			<Fragment>
 				<div className = "portfolio-project">
-		    			<h3>{this.props.name}</h3>
+		    			<i><h3>{this.props.name}</h3></i>
 		    			<p><strong>About: </strong>{this.props.about}</p>
 							{this.props.issues && <p>
 								<strong>Common Issues I Encountered: </strong>{this.props.issues}

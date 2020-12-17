@@ -6,8 +6,7 @@ const contact = () => {
 	<div className = "contact-container">
 
       <div className = "contact-header">
-            <h1>Contact Me</h1>
-            <p>Feel free to reach out to me on any one of these platforms.</p>
+            <h1>Contact</h1>
       </div>
 
       <div className = "contact">

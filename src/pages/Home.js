@@ -16,7 +16,7 @@ const Home = () =>{
       <div className = "home-about">
       <h3>About Me</h3>
         <p>
-        I am a full stack web developer with experience in React, Node.js, and Express.js. I have a computer science background in Python3. 
+        Self-starter with an engineering mindset. Full stack web developer with experience in React, Node.js, and Express.js. I have a computer science background in Python3. 
         </p>
       </div>
       <div className = "home-skills">
@@ -32,9 +32,11 @@ const Home = () =>{
       </div>
       <div className = "home-bio">
       <h3>Bio</h3>
-      <p>
-      I am a student at the College of William and Mary, where I am persuing a major in Computer Science and a minor in Physics. Since a young age, I was always working on some computer science project. Whether it was programming an Arduino Uno or creating a game in Unity, I loved the creative freedom and empowerment programming gave me. Studying physics at William and Mary has allowed me to gain a broader understanding the physical nature of our world. It has helped me understand computer science to a greater degree, and has trained me to solve problems with an analytical point of view. Going forward, I look forward to employing my knowledge in computer science and problem solving ability towards projects that will make an impactful difference in the world. 
-      </p>
+      	<p>I am presently attending the College of William and Mary persuing a B.S. in Computer Science and Physics.</p>
+    	<br/>
+	<p>Growing up, my younger self always had an Idea for a new project related to engineering and computer science. Whether it was programming an Arduino Uno, building a rocket nozzle, designing a wind tunnel, or creating a game in Unity, I loved the challenge and freedom programming and engineering gave me.</p>
+    	<br/>
+    	<p>The combination of studying Computer Science and Physics continues to broaden the depth of my techical and analytical skills. I look forward to investing my talents and knowledge to effect positive change in the world and the lives of others.</p>
       </div>
       
     </div>
