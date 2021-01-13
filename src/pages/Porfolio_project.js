@@ -45,6 +45,8 @@ class Project extends React.Component{
 			    			</button>
 		    			</div>
 
+		    			<div className = "portfolio-project-wrapper">
+
 	    				<div className = {"portfolio-project-details-" + this.state.showDetails.toString()}>
 	    				<p><strong>About: </strong>{this.props.about}</p>
 						{this.props.issues && <p>
@@ -94,6 +96,7 @@ class Project extends React.Component{
 							{this.state.show_gallery && 
 								<Gallery index = {this.state.gallery_index} handler = {this.handleGallery} screenshots = {this.props.screenshots}/>
 							}
+						</div>
 						</div>
 
 						

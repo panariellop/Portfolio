@@ -1,7 +1,8 @@
 .navbar-container{
+	font-family: 'Montserrat', sans-serif;
 	position: fixed;
 	top: 0;
-	display: inline-grid;
+	display: inline-block;
 	grid-template-columns: max-content auto; 
 	width: 100%;
 	padding-left: 10px;
@@ -17,17 +18,57 @@
 
 .navbar-logo{
 	display: flex;
+	float: left;
 	align-items: center; 
 	letter-spacing: 2px; 
 }
 
-.navbar-navlist{
+
+
+.navbar-navlist-true{
+	display: flex;
+	float: right;
 	margin-bottom: auto;
 	margin-top: auto;
+	transition: all 0.5s linear;
+	transform: translate(0, 25%);
+}
+.navbar-navlist-false{
+	display: none;
 }
 
+.navbar-navmenu-true{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-color: white; 
+}
+.navbar-navmenu-false{
+	display: none;
+}
+
+.navbar-navmenu-container{
+	width: 300px;
+	height: 100%;
+	text-align: center;
+	margin-left: auto; margin-right: auto;
+	transform: translate(-5vw, 30vh)
+}
+
+
+.navbar-menulink{
+	font-size: 30px;
+	display: block ;
+}
+
+
+
+
+
+
+
+
 .navbar-navlink{
-	align-items: center; 
 	display: inline-block;
   	padding-left: 10px;
   	padding-right: 10px;
@@ -39,4 +80,8 @@
 .navbar-routerlink:hover{
 	color: blue; 
 	text-decoration: none; 
+}
+
+@media only screen and (max-width: 650px){
+
 }

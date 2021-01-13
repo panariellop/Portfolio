@@ -53,7 +53,7 @@ class portfolio extends React.Component{
 
 
 
-						<Project name = "ppanariello.com"
+						<Project name = "ppanariello"
 						github_link = "https://github.com/panariellop/Portfolio" link = "/"
 						technologies = {["React", "Node.js", "Netlify"]}
 		    			about ="This application was built using react for state management and component handling."/>

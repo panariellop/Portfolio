@@ -5,11 +5,21 @@
 	width: 700px;
 	margin-left: auto; 
 	margin-right: auto;
-	padding: 20px;
-	border: 1px solid white;
+	border: 0px solid white;
 	border-radius: 7px;
 	box-shadow: 0 0 5px #ccc;
 	margin-top: 20px; margin-bottom: 20px;
+}
+@media only screen and (max-width: 750px){
+	.portfolio-project{
+		width: auto;
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+}
+
+.portfolio-project-wrapper{
+	padding: 20px;
 }
 
 
@@ -39,12 +49,20 @@
 	overflow:hidden;
 	opacity: 1; 
 	transition: opacity 0.7s linear;
-	max-height: 800px;
+	max-height: 2000px;
     transition: max-height 0.5s ease-in;
 }
 
+.portfolio-project-header{
+	background-color: #FC4445;
+	padding: 10px;
+	border-top-left-radius: 7px; border-top-right-radius: 7px; 
+}
+
 .portfolio-project-header i h3{
+	width: 60%;
 	display: inline-flex;
+	color: white;
 
 }
 .portfolio-project-header button{
@@ -52,14 +70,11 @@
 	border-radius: 12px;
 	display: inline-flex;
 	float: right;
-	color: #5579fa;
-	background-color: white; 
-	transition: all 0.3s ease-out;
+	color: white;
+	background-color: transparent; 
+	transform: translate(0, 25%);
 }
-.portfolio-project-header button:hover{
-	border: 1px solid #5579fa;
-	transition: all 0.3s ease-in;
-}
+
 .portfolio-project-header button:focus{
 	outline: none;
 }	
@@ -80,6 +95,9 @@
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
+.screenshots-container{
+	text-align: center; 
+}
 
 .screenshots-container li{
 	list-style-type:none; 
@@ -95,3 +113,4 @@
 .screenshots-container li img:hover{
 	cursor: pointer; 
 }
+

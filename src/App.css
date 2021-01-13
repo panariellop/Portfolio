@@ -1,5 +1,7 @@
 .app-container{
 	margin-top: 70px;
+	background-color: white;
+	font-family: 'Source Code Pro', monospace;
 }
 
 @media only screen and (max-width: 505px){
