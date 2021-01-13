@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react'
-import './Portfolio.css'
+import './Portfolio_project.styles.css'
 import github_logo_inactive from '../static/GitHub_Logo.png';
 import github_logo_active from '../static/GitHub_Logo_White.png';
 import PropTypes from 'prop-types'
@@ -13,8 +13,10 @@ class Project extends React.Component{
 			github_logo: github_logo_inactive,
 			show_gallery: false,
 			gallery_index: 0,
+			showDetails: false, 
 		}
 		this.handleGallery = this.handleGallery.bind(this)
+		this.handleShowDetails = this.handleShowDetails.bind(this)
 	}
 
 	handleGallery(i){
@@ -24,26 +26,41 @@ class Project extends React.Component{
 		})
 	}
 
+	handleShowDetails(){
+		this.setState({
+			showDetails: !this.state.showDetails
+		})
+	}
+
 	
 
 	render(){
 		return(
 			<Fragment>
 				<div className = "portfolio-project">
-		    			<i><h3>{this.props.name}</h3></i>
-		    			<p><strong>About: </strong>{this.props.about}</p>
-							{this.props.issues && <p>
-								<strong>Common Issues I Encountered: </strong>{this.props.issues}
-							</p>}
-								<div className = 'portfolio-project-technologies'>
-								<ul>
-									{this.props.technologies.map((e, i)=> {
-										return (
-											<li key = {i}>{this.props.technologies[i]}</li>
-										)
-									})}
-								</ul>
-								</div>
+						<div className = "portfolio-project-header">
+			    			<i><h3>{this.props.name}</h3></i>
+			    			<button onClick = {this.handleShowDetails}>
+			    			{this.state.showDetails ? "Hide" : "More"}
+			    			</button>
+		    			</div>
+
+	    				<div className = {"portfolio-project-details-" + this.state.showDetails.toString()}>
+	    				<p><strong>About: </strong>{this.props.about}</p>
+						{this.props.issues && <p>
+							<strong>Common Issues I Encountered: </strong>{this.props.issues}
+						</p>}
+						</div>
+							<div className = 'portfolio-project-technologies'>
+							<ul>
+								{this.props.technologies.map((e, i)=> {
+									return (
+										<li key = {i}>{this.props.technologies[i]}</li>
+									)
+								})}
+							</ul>
+						</div>
+
 		    			{this.props.github_link && <a href = {this.props.github_link}><img src={this.state.github_logo} alt = "Github"
 		    				onMouseEnter= { () => {
 		    					this.setState({

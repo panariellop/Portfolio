@@ -1,0 +1,97 @@
+
+
+.portfolio-project{
+	padding: 20px;
+	border: 1px solid white;
+	border-radius: 7px;
+	transition: 0.4s;
+}
+
+.portfolio-project:hover{
+	transition: 0.4s;
+	box-shadow: 0 0 5px #ccc;
+}
+
+
+.portfolio-project a img{
+	height: 30px;
+	transform: translate(0,-10%);
+	padding-right: 15px;
+}
+
+.portfolio-project a{
+	transition: 0.4s
+}
+
+.portfolio-project a:hover{
+	text-decoration: none;
+	color: blue;
+}
+
+.portfolio-project-details-false{
+    overflow: hidden;
+	transition: opacity 0.7s linear;
+	max-height: 0;
+    transition: max-height 0.5s ease-out;
+}
+
+.portfolio-project-details-true{
+	overflow:hidden;
+	opacity: 1; 
+	transition: opacity 0.7s linear;
+	max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+
+.portfolio-project-header i h3{
+	display: inline-flex;
+
+}
+.portfolio-project-header button{
+	border: 1px solid white;
+	border-radius: 12px;
+	display: inline-flex;
+	float: right;
+	color: #5579fa;
+	background-color: white; 
+	transition: all 0.3s ease-out;
+}
+.portfolio-project-header button:hover{
+	border: 1px solid #5579fa;
+	transition: all 0.3s ease-in;
+}
+.portfolio-project-header button:focus{
+	outline: none;
+}	
+
+.portfolio-project-technologies ul{
+	list-style-type: none;
+	padding-left: 0;
+
+}
+.portfolio-project-technologies li{
+	display: inline-block;
+	margin-right: 15px;
+	color: black;
+	border-radius: 7px;
+	background-color: rgb(228, 228, 228);
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.screenshots-container li{
+	list-style-type:none; 
+	display: inline-block; 
+	padding: 10px; 
+	width: 30%; 
+}
+
+.screenshots-container li img{
+	border: 1px solid rgba(0, 0, 0, 0.297); 
+	width: 100%;
+}
+.screenshots-container li img:hover{
+	cursor: pointer; 
+}
