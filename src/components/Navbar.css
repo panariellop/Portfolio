@@ -69,6 +69,12 @@
 	font-size: 30px;
 	display: block ;
 }
+.navbar-menulink a{
+	display: block;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 
 .navbar-container button{
@@ -92,6 +98,7 @@
   	padding-right: 10px;
 }
 .navbar-routerlink{
+
 	text-decoration: none; 
 	transition: 0.4s;
 }
