@@ -50,7 +50,7 @@ class Project extends React.Component{
 						{this.props.issues && <p>
 							<strong>Common Issues I Encountered: </strong>{this.props.issues}
 						</p>}
-						</div>
+						
 							<div className = 'portfolio-project-technologies'>
 							<ul>
 								{this.props.technologies.map((e, i)=> {
@@ -61,7 +61,7 @@ class Project extends React.Component{
 							</ul>
 						</div>
 
-		    			{this.props.github_link && <a href = {this.props.github_link}><img src={this.state.github_logo} alt = "Github"
+		    			{this.props.github_link && <a target="_blank" rel="noopener noreferrer" href = {this.props.github_link}><img src={this.state.github_logo} alt = "Github"
 		    				onMouseEnter= { () => {
 		    					this.setState({
 		    						github_logo: github_logo_active
@@ -75,10 +75,11 @@ class Project extends React.Component{
 		    			/></a>}
 
 		    			{this.props.link &&
-								<a href = {this.props.link}>
+								<a target="_blank" rel="noopener noreferrer" href = {this.props.link}>
 			    				Link to Project
 			    			</a>}
-
+			    		<hr/>
+			    		</div>
 						<div className = "screenshots-container">
 						{this.props.screenshots &&
 							this.props.screenshots.map((e,i)=>{
