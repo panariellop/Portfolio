@@ -32,7 +32,7 @@ class Navbar extends React.Component{
 		return(
 			<div className = "navbar-container">
 				<h3 className = "navbar-logo">Piero Panariello</h3>
-          <button onClick = {this.showMenu}><img src = {hamburger} width = "30px" height = "30px"/></button>
+          <button onClick = {this.showMenu}><img alt = "navigation" src = {hamburger} width = "30px" height = "30px"/></button>
           <div className = {"navbar-navmenu-" + this.state.showMenu}>
             <ul className = "navbar-navmenu-container">
                 <li className = "navbar-menulink">
