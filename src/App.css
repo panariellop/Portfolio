@@ -1,15 +1,5 @@
 .app-container{
 	margin-top: 70px;
-}
-
-@media only screen and (max-width: 505px){
-	.app-container{
-		margin-top: 80px;
-	}
-}
-
-@media only screen and (max-width: 425px){
-	.app-container{
-		margin-top: 100px;
-	}
+	background-color: white;
+	font-family: 'Source Code Pro', monospace;
 }

@@ -34,7 +34,6 @@ class portfolio extends React.Component{
 		    			about = "One of my passions is weightlifting, however, I found it difficult to track my progress intermittently stopping to use pen and paper. Although Google Sheets was not built for this type of application, it was useful since my data could be accessed on multiple devices. Other applications suited to solve this problem had the same issue in common: they were not customizable and lacked the analytical features useful in tracking my progress. My application resolved these issues and improved the features found in other applications. I implemented a complete, secure, RESTful API in this application and used MongoDB Atlas to store user information in the cloud allowing my information to be accessed everywhere. My app has a unique frontend interface for complete control over my data."
 						screenshots = {[wsc1, wsc2, wsc3, wsc4, wsc5]}
 						/>
-						<hr/>
 
 				<Project name = "Tee Time Alerter"
 						github_link = "" link = "https://teealert.herokuapp.com/"
@@ -44,7 +43,6 @@ class portfolio extends React.Component{
 						screenshots = {[ttasc1]}
 						/>
 
-						<hr/>
 
 						<Project name = "Github Finder" 
 						github_link = "https://github.com/panariellop/github_finder" link = "https://panariellopgithubfinder.netlify.app"
@@ -54,9 +52,8 @@ class portfolio extends React.Component{
 						/>
 
 
-						<hr/>
 
-						<Project name = "ppanariello.com"
+						<Project name = "ppanariello"
 						github_link = "https://github.com/panariellop/Portfolio" link = "/"
 						technologies = {["React", "Node.js", "Netlify"]}
 		    			about ="This application was built using react for state management and component handling."/>
