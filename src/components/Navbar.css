@@ -24,7 +24,7 @@
 }
 
 
-
+/*
 .navbar-navlist-true{
 	display: flex;
 	float: right;
@@ -36,15 +36,23 @@
 .navbar-navlist-false{
 	display: none;
 }
-
+*/
 .navbar-navmenu-true{
 	position: relative;
 	width: 100%;
 	height: 100vh;
+	max-height: 100vh;
 	background-color: white; 
+	transition: all 0.4s linear;
 }
 .navbar-navmenu-false{
-	display: none;
+
+	opacity: 0;
+	height: 0;
+	transform: translate(-50%, 0);
+	visibility: hidden;
+	transition: all 0.4s linear;
+
 }
 
 .navbar-navmenu-container{
@@ -52,7 +60,8 @@
 	height: 100%;
 	text-align: center;
 	margin-left: auto; margin-right: auto;
-	transform: translate(-5vw, 30vh)
+	padding: 0;
+	transform: translate(0, 30vh)
 }
 
 
@@ -62,7 +71,16 @@
 }
 
 
-
+.navbar-container button{
+	background-color: white;
+	display:flex;
+	float: right;
+	border: none;
+	width: 30px;
+	height: 30px;
+	margin-right: 15px;
+	transform: translate(0, 7%);
+}
 
 
 
@@ -80,8 +98,4 @@
 .navbar-routerlink:hover{
 	color: blue; 
 	text-decoration: none; 
-}
-
-@media only screen and (max-width: 650px){
-
 }
