@@ -13,7 +13,7 @@ class Project extends React.Component{
 			github_logo: github_logo_inactive,
 			show_gallery: false,
 			gallery_index: 0,
-			showDetails: false, 
+			showDetails: false,
 		}
 		this.handleGallery = this.handleGallery.bind(this)
 		this.handleShowDetails = this.handleShowDetails.bind(this)
@@ -32,7 +32,7 @@ class Project extends React.Component{
 		})
 	}
 
-	
+
 
 	render(){
 		return(
@@ -52,7 +52,7 @@ class Project extends React.Component{
 						{this.props.issues && <p>
 							<strong>Common Issues I Encountered: </strong>{this.props.issues}
 						</p>}
-						
+
 							<div className = 'portfolio-project-technologies'>
 							<ul>
 								{this.props.technologies.map((e, i)=> {
@@ -93,13 +93,13 @@ class Project extends React.Component{
 						</div>
 
 						<div className = "portfolio-gallery-container">
-							{this.state.show_gallery && 
+							{this.state.show_gallery &&
 								<Gallery index = {this.state.gallery_index} handler = {this.handleGallery} screenshots = {this.props.screenshots}/>
 							}
 						</div>
 						</div>
 
-						
+
 
 		    		</div>
 			</Fragment>
@@ -114,7 +114,8 @@ Project.propTypes = {
 	link: PropTypes.string,
 	about: PropTypes.string,
 	technologies: PropTypes.arrayOf(PropTypes.string),
-	screenshots: PropTypes.arrayOf(PropTypes.string)
+	screenshots: PropTypes.arrayOf(PropTypes.string),
+	tags: PropTypes.arrayOf(PropTypes.string), 
 }
 
 export default Project
