@@ -24,7 +24,10 @@ class Navbar extends React.Component{
   render(){
 
     const active_style = {
-      color: 'blue'
+      color: '#DDA74F'
+    }
+    const inactive_style = {
+      color: 'black'
     }
 
 
@@ -36,7 +39,7 @@ class Navbar extends React.Component{
           <div className = {"navbar-navmenu-" + this.state.showMenu}>
             <ul className = "navbar-navmenu-container">
                 <li className = "navbar-menulink">
-                <Link style = {this.state.active_pane === 'home'? active_style: null} onClick = {() => {
+                <Link style = {this.state.active_pane === 'home'? active_style: inactive_style} onClick = {() => {
                     this.setState({
                       showMenu: false, 
                       active_pane: 'home'
@@ -44,7 +47,7 @@ class Navbar extends React.Component{
                   }} className = "navbar-routerlink" to = '/'>Home</Link>
               </li>
               <li className = "navbar-menulink">
-                <Link style = {this.state.active_pane === 'portfolio'? active_style: null} onClick = {() => {
+                <Link style = {this.state.active_pane === 'portfolio'? active_style: inactive_style} onClick = {() => {
                     this.setState({
                       showMenu: false, 
                       active_pane: 'portfolio'
@@ -52,7 +55,7 @@ class Navbar extends React.Component{
                   }} className = "navbar-routerlink" to = '/portfolio'>Portfolio</Link>
               </li>
               <li className = "navbar-menulink">
-                <Link style = {this.state.active_pane === 'contact'? active_style: null} onClick = {() => {
+                <Link style = {this.state.active_pane === 'contact'? active_style: inactive_style} onClick = {() => {
                     this.setState({
                       showMenu: false, 
                       active_pane: 'contact'

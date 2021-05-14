@@ -5,6 +5,9 @@
 	margin-bottom: 50px;
 	background-color: #f3f7f9;
 }
+.home-biopic img{
+	filter: grayscale(1) contrast(200%); 
+}
 .home-biopic h1{
 	font-variant: small-caps;
 }

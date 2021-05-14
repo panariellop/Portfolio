@@ -17,6 +17,8 @@ import wsc5 from '../static/screenshots/wsc5.png';
 
 import minimescreenshot from '../static/screenshots/minimeimg.png';
 
+import chrisvarvaroscreenshot from "../static/screenshots/chrisvarvofficial.png"; 
+
 class portfolio extends React.Component{
 
 	constructor(props){
@@ -44,6 +46,14 @@ class portfolio extends React.Component{
 		    		<p>All projects with a Github link allow you to view the source code.</p>
 		    	</div>
 		    	<div className = "portfolio-projects-wrapper">
+
+				<Project name = "Chris Varvaro Official"
+						github_link = "" link = ""
+						about = "Chris Varvaro's personal artist website."
+						technologies = {["React", "Netlify"]}
+						screenshots = {[chrisvarvaroscreenshot]}
+						tags = {['all', 'frontend']}
+				/>
 
 				<Project name = "Minime URL"
 						github_link = "" link = "https://minime-url.herokuapp.com/"
@@ -80,18 +90,7 @@ class portfolio extends React.Component{
 						screenshots={[ghfsc1, ghfsc2, ghfsc3]}
 						tags = {['all']}
 						/>
-
-
-
-						<Project name = "ppanariello"
-						github_link = "" link = "/"
-						technologies = {["React", "Node.js", "Netlify"]}
-		    			about ="This application was built using react for state management and component handling. The application was deployed using Netlify."
-		    			tags = {['all']}
-		    			/>
 						
-
-
 
 		    	</div>
 			</Fragment>
