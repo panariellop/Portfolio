@@ -48,8 +48,8 @@ class portfolio extends React.Component{
 		    	<div className = "portfolio-projects-wrapper">
 
 				<Project name = "Chris Varvaro Official"
-						github_link = "" link = ""
-						about = "Chris Varvaro's personal artist website."
+						github_link = "" link = "https://chrisvarvaromusic.com"
+						about = "Chris Varvaro's custom artist website. Built to the artist's specifications with an integrated contact system. Improved upon the origional website by fixing formatting and performance issues."
 						technologies = {["React", "Netlify"]}
 						screenshots = {[chrisvarvaroscreenshot]}
 						tags = {['all', 'frontend']}

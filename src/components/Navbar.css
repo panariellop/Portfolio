@@ -1,16 +1,13 @@
 .navbar-container{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	position: fixed;
 	top: 0;
 	display: inline-block;
 	grid-template-columns: max-content auto; 
 	width: 100%;
-	padding-left: 10px;
-	padding-right:10px;
-	border-bottom: 3px solid #DDA74F;
+	padding-left: 10px; 
+	border-bottom: 2px solid #DDA74F;
 	box-shadow: 0px 5px 10px #e1e4e7;
-	padding-top: 15px;
-	padding-bottom: 10px;
 	background-color: rgba(255,255,255,0.15);
 	z-index: 10;
 	overflow: hidden; 
@@ -22,18 +19,6 @@
 	float: left;
 	align-items: center; 
 	letter-spacing: 2px; 
-}
-.navbar-container img{
-	filter: brightness(0.5) grayscale(1); 
-	-webkit-filter: brightness(0.5) grayscale(1);
-	box-shadow: 0 0 1px 2px rgba(231, 231, 231, 0.2);
-	transition: 0.5s; 
-}
-.navbar-container img:hover{
-	filter: brightness(0) grayscale(1); 
-	-webkit-filter: brightness(0) grayscale(1);
-	box-shadow: 0 0 10px rgba(231, 231, 231, 0.2);
-	transition: 0.5s;
 }
 
 .navbar-container button{
@@ -63,8 +48,7 @@
 	position: relative;
 	width: 100%;
 	height: 100vh;
-	max-height: 100vh;
-	background-color: white; 
+	background-color: whitesmoke; 
 	transition: all 0.4s ease-in-out;
 }
 .navbar-navmenu-false{
@@ -86,7 +70,6 @@
 	transform: translate(0, 30vh)
 }
 
-
 .navbar-menulink{
 	font-size: 30px;
 	display: block ;
@@ -94,13 +77,14 @@
 .navbar-menulink a{
 	display: block;
 	width: 200px;
+	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
 	transition: 1s; 
 }
 
 .navbar-container button{
-	background-color: white;
+	background-color: transparent;
 	display:flex;
 	float: right;
 	border: none;
@@ -109,8 +93,13 @@
 	margin-right: 15px;
 	transform: translate(0, 7%);
 }
-
-
+.navbar-container button img{
+	background-color: transparent;
+	transition: 0.5s; 
+}
+.navbar-container button img:hover{
+	box-shadow: 0 0 10px rgba(231, 231, 231, 0.4);
+}
 
 
 
@@ -120,6 +109,7 @@
   	padding-right: 10px;
 }
 .navbar-routerlink{
+	text-align: center;
 	text-decoration: none;
 	background-image: linear-gradient(#000, #fff); 
 	background-size: 0 2px, 100% 2px; 

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import './Navbar.css';
-import hamburger from "../static/hamburger.png"
+import hamburger from "../static/hamburger_trans.png"
 
 class Navbar extends React.Component{
   constructor(props){
@@ -29,16 +29,25 @@ class Navbar extends React.Component{
     const inactive_style = {
       color: 'black'
     }
+    const container_format_inactive = {
+      paddingTop: "10px",
+      transition: "0.5s ease-in-out"
+    }
+    const container_format_active = {
+      paddingTop: "0px",
+      transition: "0.5s ease-in-out"
+    }
 
 
 
 		return(
-			<div className = "navbar-container">
+			<div className = "navbar-container" style = {this.state.showMenu? container_format_active : container_format_inactive}>
 				<h3 className = "navbar-logo">Piero Panariello</h3>
           <button onClick = {this.showMenu}><img alt = "navigation" src = {hamburger} width = "30px" height = "30px"/></button>
           <div className = {"navbar-navmenu-" + this.state.showMenu}>
             <ul className = "navbar-navmenu-container">
-                <li className = "navbar-menulink">
+              
+              <li className = "navbar-menulink">
                 <Link style = {this.state.active_pane === 'home'? active_style: inactive_style} onClick = {() => {
                     this.setState({
                       showMenu: false, 

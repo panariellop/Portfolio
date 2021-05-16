@@ -22,12 +22,12 @@ const Home = () =>{
       <div className = "home-skills">
       <h3>Skills</h3>  
         <ul>
-          <li><span role = "img" aria-label = "python">🐍</span>Python</li>
-          <li><span role = "img" aria-label = "react">⚛️</span>React</li>
-          <li><span role = "img" aria-label = "nodejs">🇳</span>Node.js</li>
-          <li><span role = "img" aria-label = "expressjs">🇪</span>Express.js</li>
-          <li><span role = "img" aria-label = "django">🇩</span>Django</li>
-          <li><span role = "img" aria-label = "mongodb">Ⓜ️</span>MongoDB</li>
+          <li>Python</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>Django</li>
+          <li>MongoDB</li>
         </ul>
       </div>
       <div className = "home-bio">
