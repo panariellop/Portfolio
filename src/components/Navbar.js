@@ -1,81 +1,49 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import {Link} from 'react-router-dom';
-import './Navbar.css';
-import hamburger from "../static/hamburger_trans.png"
+import './navbar.scss';
+import Contact from '..//pages/Contact';
+import Portfolio from '../pages/Portfolio';
+import Home from '../pages/Home';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 class Navbar extends React.Component{
   constructor(props){
     super(props)
     this.state = {
       active_pane: "home", 
-      showMenu: false, 
     }
-    this.showMenu = this.showMenu.bind(this)
-  }
-
-  showMenu(){
-    this.setState({
-      showMenu: !this.state.showMenu
-    })
   }
 
 
 
   render(){
-
-    const active_style = {
-      color: '#DDA74F'
-    }
-    const inactive_style = {
-      color: 'black'
-    }
-    const container_format_inactive = {
-      paddingTop: "10px",
-      transition: "0.5s ease-in-out"
-    }
-    const container_format_active = {
-      paddingTop: "0px",
-      transition: "0.5s ease-in-out"
-    }
-
-
-
-		return(
-			<div className = "navbar-container" style = {this.state.showMenu? container_format_active : container_format_inactive}>
-				<h3 className = "navbar-logo">Piero Panariello</h3>
-          <button onClick = {this.showMenu}><img alt = "navigation" src = {hamburger} width = "30px" height = "30px"/></button>
-          <div className = {"navbar-navmenu-" + this.state.showMenu}>
-            <ul className = "navbar-navmenu-container">
-              
-              <li className = "navbar-menulink">
-                <Link style = {this.state.active_pane === 'home'? active_style: inactive_style} onClick = {() => {
-                    this.setState({
-                      showMenu: false, 
-                      active_pane: 'home'
-                    })
-                  }} className = "navbar-routerlink" to = '/'>Home</Link>
-              </li>
-              <li className = "navbar-menulink">
-                <Link style = {this.state.active_pane === 'portfolio'? active_style: inactive_style} onClick = {() => {
-                    this.setState({
-                      showMenu: false, 
-                      active_pane: 'portfolio'
-                    })
-                  }} className = "navbar-routerlink" to = '/portfolio'>Portfolio</Link>
-              </li>
-              <li className = "navbar-menulink">
-                <Link style = {this.state.active_pane === 'contact'? active_style: inactive_style} onClick = {() => {
-                    this.setState({
-                      showMenu: false, 
-                      active_pane: 'contact'
-                    })
-                  }} className = "navbar-routerlink" to = '/contact'>Contact</Link>
-              </li>
-            </ul>
-          </div>
-			</div>
-  );
-	}
+      return(
+          <Fragment>
+          <Router>
+            <div className = "navbar">
+                <div className = "menu">
+                    <ul>
+                        <li><Link to = "/" className = "link">home</Link></li>
+                        <li><Link to = "/portfolio" className = "link">portfolio</Link></li>
+                        <li><Link to = "/contact" className = "link">contact</Link></li>
+                    </ul>
+                </div>
+                <div className = "name">
+                    <h1>Piero Panariello</h1>
+                    <h3>Developer.</h3>
+                </div>
+                <div className = "content">
+                   <Switch>
+                    <Route exact path = "/" component = {Home}/>
+                    <Route exact path = "/contact" component = {Contact}/>
+                    <Route exact path = "/portfolio" component = {Portfolio}/>
+                   </Switch>
+                </div>
+            </div> 
+          </Router>
+          </Fragment>
+      )
+  }
 };
 
 export default Navbar
