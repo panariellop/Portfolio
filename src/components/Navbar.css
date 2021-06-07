@@ -19,6 +19,7 @@
 	float: left;
 	align-items: center; 
 	letter-spacing: 2px; 
+    margin: 8px 0px 12px 0px; 
 }
 
 .navbar-container button{
@@ -49,6 +50,7 @@
 	width: 100%;
 	height: 100vh;
 	background-color: whitesmoke; 
+    transform: translateY(-15px); 
 	transition: all 0.4s ease-in-out;
 }
 .navbar-navmenu-false{
@@ -90,7 +92,7 @@
 	border: none;
 	width: 30px;
 	height: 30px;
-	margin-right: 15px;
+	margin-right: 25px;
 	transform: translate(0, 7%);
 }
 .navbar-container button img{
@@ -99,6 +101,7 @@
 }
 .navbar-container button img:hover{
 	box-shadow: 0 0 10px rgba(231, 231, 231, 0.4);
+    cursor: pointer; 
 }
 
 
