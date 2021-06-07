@@ -7,6 +7,8 @@ $primary-link: rgb(47,85,151);
 
 .navbar{
     display: block;  
+    position: absolute;
+    top: 0; 
 
    .menu{
        margin-top: 40px; 
@@ -54,8 +56,8 @@ $primary-link: rgb(47,85,151);
         position: absolute; 
         right: 0;  top: 0; 
         background-color: rgb(240,240,240);
-        box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2); 
-        margin-right: 20px; margin-top: 20px; 
-        overflow: scroll; 
+        box-shadow:0 0px 15px 5px rgba(0, 0, 0, 0.3); 
+        margin-right: 5vh; margin-top: 5vh;
+        overflow:auto; 
    }
 }
