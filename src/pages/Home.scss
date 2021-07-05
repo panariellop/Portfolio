@@ -6,7 +6,7 @@
 
 	display: grid;
 	grid-column-gap: 50px; 
-	grid-template-columns: auto auto; 
+	grid-template-columns: auto 15%; 
     h3{
         font-size: 38px;
         margin-bottom: 10px; 
@@ -14,8 +14,7 @@
     }
     p{
         margin-left: 30px; 
-        font-family: 'Sans serif'; 
-        font-size: 18px;
+        font-size: 16px;
     }
     
     .home-skills{
@@ -30,8 +29,7 @@
         }
         li{
             margin-left: 30px; 
-            font-family: 'Sans serif'; 
-            font-size: 18px;
+            font-size: 16px;
         }
     }
     .home-about{

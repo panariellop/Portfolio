@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react'
-import './Portfolio_project.styles.css'
+import './Portfolio_project.styles.scss'
 import github_logo_inactive from '../static/GitHub_Logo.png';
 import github_logo_active from '../static/GitHub_Logo_White.png';
 import PropTypes from 'prop-types'

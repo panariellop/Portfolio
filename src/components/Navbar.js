@@ -10,12 +10,12 @@ class Navbar extends React.Component{
   constructor(props){
     super(props)
     this.state = {
-      active_pane: "home", 
+      active_pane: "home",
     }
       this.handleChange = this.handleChange.bind(this)
   }
 
-    
+
     handleChange(e){
         this.setState({
             active_pane: e.target.name
@@ -26,7 +26,7 @@ class Navbar extends React.Component{
 
   render(){
         const active_link = {
-            textDecoration: "underline"
+            textDecoration: "line-through"
         }
 
       return(
@@ -35,24 +35,23 @@ class Navbar extends React.Component{
             <div className = "navbar">
                 <div className = "menu">
                     <ul>
-                        <li><Link 
+                        <li><Link
                                 style = { this.state.active_pane === "home" ? active_link : null}
-                                to = "/" 
+                                to = "/"
                                 className = "link"
                                 onClick = {this.handleChange}
                                 name = "home"
                         >home</Link></li>
-                        <li><Link 
+                        <li><Link
                                  style = { this.state.active_pane === "portfolio" ? active_link : null}
-
-                                 to = "/portfolio" 
+                                 to = "/portfolio"
                                  className = "link"
                                  name = "portfolio"
                                  onClick = {this.handleChange}
                                  >portfolio</Link></li>
-                        <li><Link 
+                        <li><Link
                                 style = { this.state.active_pane === "contact" ? active_link : null}
-                                 to = "/contact" 
+                                 to = "/contact"
                                  className = "link"
                                  name = "contact"
                                  onClick = {this.handleChange}
@@ -70,7 +69,7 @@ class Navbar extends React.Component{
                     <Route exact path = "/portfolio" component = {Portfolio}/>
                    </Switch>
                 </div>
-            </div> 
+            </div>
           </Router>
           </Fragment>
       )

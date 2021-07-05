@@ -1,63 +1,63 @@
-$primary-link: rgb(47,85,151); 
+$primary-link: rgb(47,85,151);
 .navbar{
-    background-image: linear-gradient(165deg, rgb(242,242,242) 20%, rgb(248,248,248) 20% 50%, rgb(87,255,224) 50%); 
-    width: 100%; height: 100vh; 
+    background-image: linear-gradient(165deg, rgb(242,242,242) 20%, rgb(248,248,248) 20% 50%, rgb(87,255,224) 50%);
+    width: 100%; height: 100vh;
 
 }
 
 .navbar{
-    display: block;  
+    display: block;
     position: absolute;
-    top: 0; 
+    top: 0;
 
    .menu{
-       margin-top: 40px; 
+       margin-top: 40px;
        ul{
            list-style-type: none;
            li{
-              padding-bottom: 20px;  
-              font-size: 18px; 
+              padding-bottom: 20px;
+              font-size: 18px;
               .link{
-                  text-decoration: none; 
-                  color: black; 
-                  transition: color 0.2s linear; 
+                  text-decoration: none;
+                  color: black;
+                  transition: color 0.2s linear;
               }
               .link:hover{
-                  text-decoration: underline; 
-                  color:$primary-link;  
-                  transition: color 0.2s linear; 
+                  text-decoration: line-through; 
+                  color:$primary-link;
+                  transition: color 0.2s linear;
               }
            }
        }
    }
 
    .name{
-       position: absolute; 
-       bottom: 0; left: 0; 
-       margin-left: 30px; margin-bottom: 30px; 
+       position: absolute;
+       bottom: 0; left: 0;
+       margin-left: 30px; margin-bottom: 30px;
        h1{
-           color: $primary-link; 
-           font-size: 25px; 
-           font-weight: 500; 
-           margin: 0; 
+           color: $primary-link;
+           font-size: 25px;
+           font-weight: 500;
+           margin: 0;
        }
        h3{
-           margin: 0; 
-           margin-top: 10px; 
+           margin: 0;
+           margin-top: 10px;
            font-weight: 800;
-           font-size: 25px; 
-           transform: translateX(30px); 
+           font-size: 25px;
+           transform: translateX(30px);
        }
 
    }
 
    .content{
-        width: 70vw; height: 90vh; 
-        position: absolute; 
-        right: 0;  top: 0; 
+        width: 70vw; height: 90vh;
+        position: absolute;
+        right: 0;  top: 0;
         background-color: rgb(240,240,240);
-        box-shadow:0 0px 15px 5px rgba(0, 0, 0, 0.3); 
+        box-shadow:0 0px 15px 5px rgba(0, 0, 0, 0.3);
         margin-right: 5vh; margin-top: 5vh;
-        overflow:auto; 
+        overflow:auto;
    }
 }
